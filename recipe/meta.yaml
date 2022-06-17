@@ -1,5 +1,5 @@
 {% set name = "dustgoggles" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dustgoggles-{{ version }}.tar.gz
-  sha256: 15d1b1eb23d7b0d1c09aa800248e093ba78c590f916652c6b58fa63a90fd66da
+  sha256: ac9c3a163bbb171f4fcfd59d5f6652c81cb56781de26060b680303b3be008f44
 
 build:
   noarch: python
@@ -31,6 +31,7 @@ test:
     - pip
 
 about:
+
   home: https://github.com/millionconcepts/dustgoggles
   summary: ready for anything in these goggles -- a marslab project 
   description: dustgoggles is a utility library for the `marslab` ecosystem. It contains a variety of generic utilities, text-parsing tools, a framework for domain-specific functional languages, and an in-memory cache framework.
