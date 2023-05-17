@@ -1,11 +1,11 @@
-About dustgoggles
-=================
+About dustgoggles-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dustgoggles-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/millionconcepts/dustgoggles
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dustgoggles-feedstock/blob/main/LICENSE.txt)
 
 Summary: ready for anything in these goggles -- a marslab project
 
