@@ -1,5 +1,5 @@
 {% set name = "dustgoggles" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dustgoggles-{{ version }}.tar.gz
-  sha256: f40edfc8cef882f1814df469eeee3c28797162e9f3b2c15ae2da12fffec945d6
+  sha256: 43f8105edd57c871ef6a2fa3ca962504c71305b247dfc3f710640e63349ce1c2
 
 build:
   noarch: python
