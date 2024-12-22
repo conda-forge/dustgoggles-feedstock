@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dustgoggles-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dustgoggles-{{ version }}.tar.gz
   sha256: 29da22696242138ecd9da3da715398c6d3bd46ea3937a8862eac7359e6e5c47f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
   run:
     - cytoolz
     - more-itertools
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
 
