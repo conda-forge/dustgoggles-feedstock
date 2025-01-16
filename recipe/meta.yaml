@@ -1,5 +1,6 @@
 {% set name = "dustgoggles" %}
 {% set version = "0.7.6" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
+    - setuptools
   run:
     - cytoolz
     - more-itertools
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -30,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - setuptools
 
 about:
 
